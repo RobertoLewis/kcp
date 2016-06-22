@@ -25,7 +25,7 @@ const ResultsJumbotron = (props) => {
     }
 
   return (
-    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel" >
       {/*Indicators*/}
       <ol className="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
@@ -36,36 +36,26 @@ const ResultsJumbotron = (props) => {
       </ol>
 
       {/*Wrapper for slides*/}
-      <div className="carousel-inner" role="listbox">
+      <div className="carousel-inner" role="listbox" >
         <div className="item active">
           <img src={jumboImages[jumboImages.storage[0]].imageUrl} alt="..."></img>
-          <div className="carousel-caption">
-            {jumboImages[jumboImages.storage[0]].displayName}
-          </div>
+
         </div>
         <div className="item">
            <img src={jumboImages[jumboImages.storage[1]].imageUrl} alt="..."/>
-           <div className="carousel-caption">
-             {jumboImages[jumboImages.storage[1]].displayName}
-           </div>
+
          </div>
          <div className="item">
            <img src={jumboImages[jumboImages.storage[2]].imageUrl} alt="..."/>
-           <div className="carousel-caption">
-             {jumboImages[jumboImages.storage[2]].displayName}
-           </div>
+
          </div>
          <div className="item">
            <img src={jumboImages[jumboImages.storage[3]].imageUrl} alt="..."/>
-           <div className="carousel-caption">
-             {jumboImages[jumboImages.storage[3]].displayName}
-           </div>
+
          </div>
          <div className="item">
            <img src={jumboImages[jumboImages.storage[4]].imageUrl} alt="..."/>
-           <div className="carousel-caption">
-             {jumboImages[jumboImages.storage[4]].displayName}
-           </div>
+
          </div>
 
        </div>
