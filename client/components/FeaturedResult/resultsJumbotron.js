@@ -4,12 +4,12 @@ import React from 'react';
 const ResultsJumbotron = (props) => {
 
   // creates array of images for Jumbotron
-  const imageArray = props.images.result.map((image) =>{
+  let imageArray = props.images.result.map((image) =>{
         return image;
     });
 
   //deposits five random and unique images into jumboImages object
-  const maxIndex = imageArray.length - 1;
+  let maxIndex = imageArray.length - 1;
   let jumboImages = {};
   jumboImages.storage = [];
 
