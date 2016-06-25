@@ -50,6 +50,7 @@ ResultsContainer.defaultProps = {
 
 // redux
 const mapStateToProps = ({pictures}) => {
+  console.log("pictures in ResultsContainer: ", pictures.allPictures);
   return {
     allPictures: pictures.allPictures,
     pictures: pictures.filteredPictures,

@@ -4,6 +4,15 @@ import ResultsListItem from './resultsListItem';
 import ReactInfinite from 'react-infinite';
 
 const ResultsList = (props) => {
+
+    let categories = [];
+  for (let key in props.visiblePictures){
+    let slash = key.lastIndexOf("/");
+    let category = key.slice(0, slashOne);
+    categories.push({
+      
+    });
+  }
     const visiblePictures = props.visiblePictures.map((image, idx) => {
         return <ResultsListItem image={"/media/alias/" + image.uuid} caption={image.title} showModal={props.showModal} key={idx} />
         });
