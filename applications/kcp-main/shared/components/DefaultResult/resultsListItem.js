@@ -6,7 +6,7 @@ const ResultsListItem = ({image, caption, idx, showModal}) => {
     console.log(e.target);
     showModal({idx});
   }
-  
+  //This will be a single image
   return (
     <div className="resultListItem">
       <div className="thumbnail">

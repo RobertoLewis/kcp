@@ -23,6 +23,8 @@ export default class ResultsContainer extends Component {
     this.props.actions.showModal({ show: true, imgIdx, results: this.props.visiblePictures });
   }
 
+  console.log("the fucking props in container", props);
+
   render() {
     const {
       isFetching
